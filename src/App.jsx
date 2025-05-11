@@ -1,3 +1,5 @@
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 //pages
@@ -7,9 +9,14 @@ import ContactMe from './pages/ContactMe';
 import NewPost from './pages/NewPost';
 import BlogPost from './pages/BlogPost';
 
+//components
+import Header from './components/Header';
+import Footer from './components/Footer';
+
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
+      <Header />
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='about' element={<AboutMe />} />
@@ -17,7 +24,8 @@ function App() {
         <Route path='new' element={<NewPost />} />
         <Route path='blog' element={<BlogPost />} />
       </Routes>
-    </BrowserRouter>
+      <Footer />
+    </Router>
   );
 }
 
