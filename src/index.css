@@ -14,6 +14,7 @@ body{
 :root {
   --primary-color: #FA008E;
   --secondary-color: #FFAFC5;
+  --accent-color: #FFCFD2;
   --font-main: "Chakra Petch",
     sans-serif;
     --color-info: #6C2A58;
@@ -55,7 +56,37 @@ display: flex;
 /* HOMEPAGE */
 .container{
   min-height: 100vh;
+  padding: 4rem 0;
+  background: var(--accent-color);
 }
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 50px;
+  justify-items: center;
+  
+}
+
+.card>* {
+  margin-bottom: 1rem;
+  
+}
+
+.card p, h2{
+margin-left: .5rem;
+}
+
+.card img{
+  border: solid 3px black;
+  border-radius: 10%;
+}
+
+.card h2{
+  color: var(--color-info);
+  
+}
+
 
 
 

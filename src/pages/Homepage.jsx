@@ -1,10 +1,10 @@
+import BlogGrid from '../components/BlogGrid';
+
 const Homepage = () => {
   return (
-    <>
-      <div className='container'>
-        <h1>Hello World</h1>
-      </div>
-    </>
+    <div className='container'>
+      <BlogGrid />
+    </div>
   );
 };
 
