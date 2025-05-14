@@ -22,7 +22,7 @@ function App() {
         <Route path='about' element={<AboutMe />} />
         <Route path='contact' element={<ContactMe />} />
         <Route path='new' element={<NewPost />} />
-        <Route path='blog' element={<BlogPost />} />
+        <Route path='blog/:id' element={<BlogPost />} />
       </Routes>
       <Footer />
     </Router>

@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import logo from '/src/img/LOGO.jpg';
 
 const BlogGrid = () => {
   const [posts, setPosts] = useState([]);

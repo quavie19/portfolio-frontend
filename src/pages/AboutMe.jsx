@@ -12,7 +12,7 @@ const AboutMe = () => {
           <img
             src={LOGO}
             alt='profile-pic'
-            style={{ height: '200px', borderRadius: '50%' }}
+            style={{ height: '150px', borderRadius: '50%' }}
           />
         </div>
       </div>
